@@ -1,3 +1,2 @@
 streamlit
-opencv-python
-skia-python
+opencv-python-headless==4.2.0.32
