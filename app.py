@@ -28,7 +28,7 @@ def camera_move():
             #beepy.beep(sound="ping") Alarming with prescence of objects
         #if cv2.waitKey(10) == ord('q'):
             #break
-        frame_window.image(frame1,caption="KILIMANJARO FRAME",width=400)
+        frame_window.image(frame1,caption="moshijob01@gmail.com",width=400)
     camera.release()
     cv2.destroyAllWindows()
 if st.button("START"):
