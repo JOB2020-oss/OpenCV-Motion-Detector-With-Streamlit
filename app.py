@@ -26,8 +26,8 @@ def camera_move():
             cv2.rectangle(frame1,(x,y),(x+w,y+h),(0,255,0),10)
             #winsound.Beep(1000,200) 
             #beepy.beep(sound="ping") Alarming with prescence of objects
-        if cv2.waitKey(10) == ord('q'):
-            break
+        #if cv2.waitKey(10) == ord('q'):
+            #break
         frame_window.image(frame1,caption="KILIMANJARO FRAME",width=400)
     camera.release()
     cv2.destroyAllWindows()
