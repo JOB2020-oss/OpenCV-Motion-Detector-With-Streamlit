@@ -6,7 +6,7 @@ st.header("OPEN CV MOTION DETECTOR WITH ALERT")
 st.markdown("Refresh to stop the camera")
 
 def camera_move():
-    camera = cv2.VideoCapture(0)
+    camera = cv2.VideoCapture("vid.mp4")# Replcae vid.mp4 with 0 to access the PC's webcam
     frame_window = st.image([])#In instance of image frame which will dispaly image on screen
     while camera.isOpened():
         ret,frame1 = camera.read()
