@@ -1,9 +1,9 @@
 import streamlit as st
 import cv2
 #import winsound /FOR WINDOWS
-import beepy
+#import beepy
 
-st.header("OPEN CV MOTION DETECTOR WITH ALERT")
+st.header("OPEN CV REAL TIME MOTION DETECTOR")
 st.markdown("Refresh to stop the camera")
 
 def camera_move():
@@ -24,8 +24,8 @@ def camera_move():
                 continue
             x,y,w,h = cv2.boundingRect(c)
             cv2.rectangle(frame1,(x,y),(x+w,y+h),(0,255,0),10)
-            #winsound.Beep(1000,200)
-            beepy.beep(sound="ping")
+            #winsound.Beep(1000,200) 
+            #beepy.beep(sound="ping") Alarming with prescence of objects
         if cv2.waitKey(10) == ord('q'):
             break
         frame_window.image(frame1,caption="KILIMANJARO FRAME",width=400)
